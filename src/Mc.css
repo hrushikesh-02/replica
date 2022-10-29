@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+:root {
+  --aqua1: rgb(117, 223, 174);
+  --turquoise1: rgb(97, 163, 150);
+  --yellow1: rgb(255, 195, 3);
+  --orange1: rgb(252, 123, 28);
+  --border1: #cfcfcf;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Roboto", sans-serif;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+.holder {
+  width: 95%;
+  padding-block: 2.5%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.LHS {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lHead {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.lmenu {
+  margin-bottom: 30%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boldText {
+  font-weight: 900;
+}
+
+.lmenuDashboard,
+.lmenuInbox,
+.lmenuBroadcast,
+.lmenuContacts,
+.lmenuAutomation {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  border-radius: 0px;
+  height: 12%;
+  border: none;
+  background-color: white;
+  padding-left: 15%;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.lmenuDashboard:focus,
+.lmenuInbox:focus,
+.lmenuBroadcast:focus,
+.lmenuContacts:focus,
+.lmenuAutomation:focus {
+  background: linear-gradient(to right, rgb(226, 246, 237), white, white);
+  color: var(--aqua1);
+}
+
+.underL {
+  border-radius: 0px;
+  padding-bottom: 10%;
+  margin-bottom: 10%;
+  border-bottom: 1px solid var(--border1);
+  color: var(--aqua1);
+}
+
+.RHS {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lightText {
+  color: grey;
+  font-size: x-small;
+}
+
+.lFoot {
+  width: 50%;
+}
+
+.lFootAccName {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.lFootAccNameDiv {
+  margin-left: 1%;
+}
+
+.rHead {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rHeadLHS {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.rHeadLHSName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 100%;
+  height: 50%;
+}
+
+.rHeadLHSsentence {
+  width: 100%;
+  height: 50%;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+}
+
+.rHeadColouredText {
+  color: var(--aqua1);
+  margin-inline: 2px;
+}
+
+.rHeadRHS {
+  width: 15%;
+  height: 70%;
+  border: 1px solid var(--border1);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rHeadLeft {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rHeadRight {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colouredText {
+  color: var(--aqua1);
+  font-weight: 500;
+}
+
+.rPage {
+  height: 87%;
+  gap: 25px;
+  display: grid;
+  grid-template-areas:
+    "not not not"
+    "not not not"
+    "tkt tkt ta"
+    "tkt tkt ta"
+    "tkt tkt ta"
+    "tkt tkt ta"
+    "tkt tkt ta"
+    "tkt tkt ta"
+    "tm mv r"
+    "tm mv r"
+    "tm mv r"
+    "tm mv r"
+    "tm mv r"
+    "tm mv r";
+}
+
+.notifications {
+  grid-area: not;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid var(--border1);
+}
+
+.notcompHolder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.notIconHolder {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: var(--turquoise1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.notName {
+  font-size: x-small;
+}
+
+.ticketStatus {
+  grid-area: tkt;
+  border: 1px solid var(--border1);
+}
+.topAgent {
+  grid-area: ta;
+  border: 1px solid var(--border1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.totalMessages {
+  grid-area: tm;
+  border: 1px solid var(--border1);
+  width: fit-content;
+  height: 100%;
+}
+.messageVolume {
+  grid-area: mv;
+  border: 1px solid var(--border1);
+}
+.rates {
+  grid-area: r;
+  border: 1px solid var(--border1);
+}
+
+.taParent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.taHolder {
+  padding-inline: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--turquoise1);
+}
+
+.talhs {
+  justify-self: start;
+  width: 72%;
+}
+
+.smallfont {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.tarhs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+}
