@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
-class PopChart extends Component {
+class CircleChart extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,12 +14,7 @@ class PopChart extends Component {
           categories: ["ny", "la", "ch"],
         },
       },
-      series: [
-        {
-          name: "Population",
-          data: [9, 6, 3],
-        },
-      ],
+      series: [44, 55, 67, 83],
     };
   }
   render() {
@@ -27,7 +22,7 @@ class PopChart extends Component {
       <Chart
         options={this.state.options}
         series={this.state.series}
-        type="bar"
+        type="radialBar"
         height="100%"
         width="100%"
       />
@@ -35,4 +30,4 @@ class PopChart extends Component {
   }
 }
 
-export default PopChart;
+export default CircleChart;

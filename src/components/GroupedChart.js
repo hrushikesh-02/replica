@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
-class PopChart extends Component {
+class GroupedChart extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,8 +16,16 @@ class PopChart extends Component {
       },
       series: [
         {
-          name: "Population",
-          data: [9, 6, 3],
+          data: [44, 55, 41, 64, 22, 43, 21],
+        },
+        {
+          data: [53, 32, 33, 52, 13, 44, 32],
+        },
+        {
+          data: [44, 55, 41, 64, 22, 43, 21],
+        },
+        {
+          data: [53, 32, 33, 52, 13, 44, 32],
         },
       ],
     };
@@ -35,4 +43,4 @@ class PopChart extends Component {
   }
 }
 
-export default PopChart;
+export default GroupedChart;

@@ -10,6 +10,9 @@ import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import PopChart from "./components/PopChart";
+import AnotherChart from "./components/AnotherChart";
+import CircleChart from "./components/CircleChart.";
+import GroupedChart from "./components/GroupedChart";
 
 export default function MainContainer() {
   const arr = [
@@ -125,7 +128,9 @@ export default function MainContainer() {
               name={"Avg Response time"}
             ></Notcomp>
           </div>
-          <div className="ticketStatus"></div>
+          <div className="ticketStatus">
+            <GroupedChart />
+          </div>
           <div className="topAgent">
             {arr.map((item, index) => (
               <div key={index} className="taParent">
@@ -145,8 +150,12 @@ export default function MainContainer() {
           <div className="totalMessages">
             <PopChart />
           </div>
-          <div className="messageVolume"></div>
-          <div className="rates"></div>
+          <div className="messageVolume">
+            <AnotherChart />
+          </div>
+          <div className="rates">
+            <CircleChart />
+          </div>
         </div>
       </div>
     </div>
