@@ -210,6 +210,7 @@
   justify-content: space-evenly;
   align-items: center;
   border: 1px solid var(--border1);
+  padding: 2%;
 }
 
 .notcompHolder {
@@ -229,6 +230,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 8px;
+  color: white;
 }
 
 .notName {
@@ -300,16 +302,19 @@
 @media only screen and (max-width: 600px) {
   .holder {
     margin: 0%;
-    overflow-y: scroll;
-    height: 100vh;
+    width: 100%;
+    padding: 0%;
   }
   .LHS {
     display: none;
     width: 0%;
   }
   .RHS {
-    width: 60%;
+    margin-left: 0%;
+    width: 90%;
+    flex-direction: column;
     align-items: center;
+    margin: auto;
   }
   .rPage {
     display: flex;
